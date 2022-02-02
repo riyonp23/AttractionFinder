@@ -29,7 +29,9 @@ def search():
     if time == "X" or money == "X" or location == "X" or age == "X":
         messagebox.showerror(title="Error", message="Please Select An Option For All The Dropdowns")
         return
-
+    if time == "Time" or money == "Money" or location == "Location" or age == "Age":
+        messagebox.showerror(title="Error", message="Please Select An Option For All The Dropdowns")
+        return
     if time == "Night":
         if age == "0-17":
             pass
@@ -299,6 +301,24 @@ def search():
                     canvasPic.create_image(250, 137, image=img26)
 
 
+def reset():
+    global time
+    global money
+    global location
+    global age
+    clickedTime.set("Time")
+    time = "Time"
+    clickedMoney.set("Money")
+    money = "Money"
+    clickedDistance.set("Location")
+    location = "Location"
+    clickedAge.set("Age")
+    age = "Age"
+    instruction.config(text="Start By Click On The Dropdowns Located To The Left And Hit Search When You Are Done")
+    place.config(text="")
+    canvasPic.delete("all")
+
+
 window.maxsize(800, 500)
 window.iconbitmap('./assets/logo.ico')
 window.resizable(False, False)
@@ -468,11 +488,17 @@ dropAge = OptionMenu(left_frame, clickedAge, *optionsAge, command=display_select
 dropAge.place(x=10,y=225)
 dropAge.config(width=7, height=1, bd=0, relief=FLAT, activebackground="#36393F", bg="#36393F", highlightthickness=0, anchor="w", fg="white", activeforeground="white")
 
-# Button
+# Button Search
 searchButton = Button(left_frame, text="Search", command=search)
 searchButton.place(x=10,y=275)
 searchButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", fg="white", activeforeground="white")
 
+# Button Reset
+resetButton = Button(left_frame, text="Reset", command=reset)
+resetButton.place(x=60, y=275)
+resetButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", fg="white", activeforeground="white")
+
 
 # Execute tkinter
 window.mainloop()
+

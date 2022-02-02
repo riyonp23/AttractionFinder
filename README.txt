@@ -6,3 +6,6 @@ Run 'Attraction Finder.exe' to get started
 MAKE SURE TO HAVE ASSETS FOLDER IN THE SAME FOLDER AS THE EXE
 
 SOURCE CODE IN sourcecode.py 478 Lines Of Code In Python
+----------------------------------------------------------
+Changelog:
+2/1/22: Added Reset Button - Riyon

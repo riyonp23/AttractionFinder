@@ -2,9 +2,8 @@
 Developers: [Riyon Praveen](https://github.com/Dev-SkyLab), [Aaron Bijoy](https://github.com/DoubleAron5), & [Yash Vora](https://github.com/yashvora317)
 
 ## How It Works
-Download as ZIP
-*MAKE SURE TO HAVE ASSETS FOLDER IN THE SAME FOLDER AS THE EXE*
-Run `Attraction Finder.exe`
+* Download as ZIP (MAKE SURE TO HAVE ASSETS FOLDER IN THE SAME FOLDER AS THE EXE)
+* Run `Attraction Finder.exe`
 
 ## Requirements
 * **OS:** Windows 10 & 11, Linux, macOS

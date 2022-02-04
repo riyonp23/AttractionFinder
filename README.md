@@ -1,5 +1,4 @@
 # Attraction Finder
-Find any attraction you are looking for
 Developers: [Riyon Praveen](https://github.com/Dev-SkyLab), [Aaron Bijoy](https://github.com/DoubleAron5), & [Yash Vora](https://github.com/yashvora317)
 
 ## How It Works

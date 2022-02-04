@@ -17,3 +17,5 @@ Coded In [Python 3.5](https://github.com/Dev-SkyLab/AttractionFinder/blob/main/s
 **2/1/22:** Added Reset Button - Riyon
 <br>
 **2/3/22:** Added About Button, Updated Logo & README - Riyon
+<br>
+**2/4/22** Added Day:0-17 Assests - Yash

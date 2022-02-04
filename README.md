@@ -19,6 +19,11 @@ Coded In [Python 3.5](https://github.com/Dev-SkyLab/AttractionFinder/blob/main/s
 **2/3/22:** Added About Button, Updated Logo & README - Riyon
 <br>
 **2/4/22:** Added Day: 0-17 Assets - Yash
+<br>
 **2/4/22:** Added Night 0-17 Assets - Aaron
+<br>
 **2/5/22:** Added Night 18-49 Assets - Aaron
+<br>
 **2/5/22:** Added Night 50+ Assets - Aaron
+<br>
+

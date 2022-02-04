@@ -15,4 +15,5 @@ Coded In [Python 3.5](https://github.com/Dev-SkyLab/AttractionFinder/blob/main/s
 
 ## ChangeLog
 **2/1/22:** Added Reset Button - Riyon
+<br>
 **2/3/22:** Added About Button, Updated Logo & README - Riyon

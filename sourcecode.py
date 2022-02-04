@@ -25,11 +25,16 @@ def display_selectedage(choice):
     age = choice
 
 
+def display_selectedweather(choice):
+    global weather
+    weather = choice
+
+
 def search():
-    if time == "X" or money == "X" or location == "X" or age == "X":
+    if time == "X" or money == "X" or location == "X" or age == "X" or weather == "X":
         messagebox.showerror(title="Error", message="Please Select An Option For All The Dropdowns")
         return
-    if time == "Time" or money == "Money" or location == "Location" or age == "Age":
+    if time == "Time" or money == "Money" or location == "Location" or age == "Age" or weather == "Weather":
         messagebox.showerror(title="Error", message="Please Select An Option For All The Dropdowns")
         return
     if time == "Night":
@@ -306,6 +311,7 @@ def reset():
     global money
     global location
     global age
+    global weather
     clickedTime.set("Time")
     time = "Time"
     clickedMoney.set("Money")
@@ -314,16 +320,22 @@ def reset():
     location = "Location"
     clickedAge.set("Age")
     age = "Age"
+    clickedWeather.set("Weather")
+    weather = "Weather"
     instruction.config(text="Start By Click On The Dropdowns Located To The Left And Hit Search When You Are Done")
     place.config(text="")
     canvasPic.delete("all")
+
+
+def about():
+    messagebox.showinfo("Information", "     2022 FBLA State Qualifier Attraction Finder\nCreated By Riyon Praveen, Aaron Bijoy, & Yash Vora\n\nAny Questions or Bugs? Contact us now!\nemail: riyonpraveen23@gmail.com\nphone: 813-438-9484")
 
 
 window.maxsize(800, 500)
 window.iconbitmap('./assets/logo.ico')
 window.resizable(False, False)
 window.config(bg="#36393F")
-window.title("Attracion Finder")
+window.title("Attraction Finder")
   
 left_frame = Frame(window, width=100, height=500, bg="#18191C")
 left_frame.pack( side = "left")
@@ -334,6 +346,7 @@ time = "X"
 money = "X"
 location = "X"
 age = "X"
+weather = "X"
 
 #Text
 title = Label(window, text="Attraction Finder", bg="#36393F", foreground="white")
@@ -414,7 +427,7 @@ clickedTime.set("Time")
 
 # Create Dropdown menu
 dropTime = OptionMenu(left_frame, clickedTime, *optionsTime, command=display_selectedtime)
-dropTime.place(x=10,y=25)
+dropTime.place(x=10, y=25)
 dropTime.config(width=7, height=1, bd=0, relief=FLAT, activebackground="#36393F", bg="#36393F", highlightthickness=0, anchor="w", fg="white", activeforeground="white")
 
 # Weather
@@ -430,7 +443,7 @@ clickedWeather = StringVar()
 clickedWeather.set("Weather")
 
 # Create Dropdown menu
-dropWeather = OptionMenu(left_frame, clickedWeather, *optionsWeather)
+dropWeather = OptionMenu(left_frame, clickedWeather, *optionsWeather, command=display_selectedweather)
 dropWeather.place(x=10,y=75)
 dropWeather.config(width=7, height=1, bd=0, relief=FLAT, activebackground="#36393F", bg="#36393F", highlightthickness=0, anchor="w", fg="white", activeforeground="white")
 
@@ -498,7 +511,11 @@ resetButton = Button(left_frame, text="Reset", command=reset)
 resetButton.place(x=60, y=275)
 resetButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", fg="white", activeforeground="white")
 
+# Button About
+aboutButton = Button(window, text="ABOUT", command=about)
+aboutButton.place(x=755, y=0)
+aboutButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", fg="white", activeforeground="white", font=("Courier", 10))
+
 
 # Execute tkinter
 window.mainloop()
-

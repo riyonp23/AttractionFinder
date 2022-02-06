@@ -3,6 +3,7 @@ Developers: [Riyon Praveen](https://github.com/skyy-rad), [Aaron Bijoy](https://
 
 ## How It Works
 * Download as ZIP (MAKE SURE TO HAVE ASSETS FOLDER IN THE SAME FOLDER AS THE EXE)
+* Extract ZIP
 * Run `Attraction Finder.exe`
 
 ## Requirements

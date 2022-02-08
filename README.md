@@ -9,7 +9,7 @@ Developers: [Riyon Praveen](https://github.com/skyy-rad), [Aaron Bijoy](https://
 ## Requirements
 * **OS:** Windows 10 & 11, Linux, macOS
 * **WIFI:** Stable Internet Connection
-* **SPACE:** 10 MB
+* **SPACE:** 25 MB
 * **RAM:** 2 GB
 
 ## Source Code

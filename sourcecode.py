@@ -1,3 +1,4 @@
+# importing different library
 from tkinter import *
 from tkinter import messagebox
 import os
@@ -6,32 +7,39 @@ import webbrowser
 window = Tk()
 
 
-# Functions
+# Defining functions
+
+# Time variable functions
 def display_selectedtime(choice):
     global time
     time = choice
 
 
+# Money variable function
 def display_selectedmoney(choice):
     global money
     money = choice
 
 
+# Location variable function
 def display_selectedlocation(choice):
     global location
     location = choice
 
 
+# Age variable function
 def display_selectedage(choice):
     global age
     age = choice
 
 
+# Weather variable function
 def display_selectedweather(choice):
     global weather
     weather = choice
 
 
+# Background Functions
 def on_enterplace(e):
     place.config(foreground="blue")
 
@@ -44,6 +52,7 @@ def callback(url):
     webbrowser.open_new_tab(url)
 
 
+# reset button function
 def reset():
     global time
     global money
@@ -65,6 +74,7 @@ def reset():
     canvaspic.delete("all")
 
 
+# Function for deciding which attraction gets displayed through if - else statements
 def search():
     if time == "X" or money == "X" or location == "X" or age == "X" or weather == "X":
         messagebox.showerror(title="Error", message="Please Select An Option For All The Dropdowns")
@@ -396,6 +406,7 @@ def search():
 
 
 # Attraction CANVAS
+# Stores the images used in the program
 img2 = PhotoImage(file="./assets/riverwalk.png")
 img3 = PhotoImage(file="./assets/icon.png")
 img4 = PhotoImage(file="./assets/diego.png")
@@ -448,6 +459,7 @@ img63 = PhotoImage(file="./assets/straz.png")
 img64 = PhotoImage(file="./assets/library.png")
 img66 = PhotoImage(file="./assets/augustine.png")
 
+# Setting the screen 
 window.maxsize(800, 500)
 window.iconbitmap('./assets/logo.ico')
 window.resizable(False, False)
@@ -586,19 +598,16 @@ dropAge.config(width=7, height=1, bd=0, relief=FLAT, activebackground="#36393F",
                anchor="w", fg="white", activeforeground="white")
 
 
-# Button Functions
-
-
+# Functions for button
 def about():
-    messagebox.showinfo("Information",
-                        "     2022 FBLA State Qualifier Attraction Finder\nCreated By Riyon Praveen, Aaron Bijoy, & Yash Vora\n\nAny Questions or Bugs? Contact us now!\nemail: riyonpraveen23@gmail.com\nphone: 813-438-9484")
+    messagebox.showinfo("Information", "     2022 FBLA State Qualifier Attraction Finder\nCreated By Riyon Praveen, Aaron Bijoy, & Yash Vora\n\nAny Questions or Bugs? Contact us now!\nemail: riyonpraveen23@gmail.com\nphone: 813-438-9484")
 
 
 def source():
-    dir = r'./assets/sources.txt'
+    filepath = r'./assets/sources.txt'
     sources = messagebox.askyesno("Sources", "Open Source.txt?")
     if sources:
-        os.startfile(os.path.normpath(dir))
+        os.startfile(os.path.normpath(filepath))
         return
     else:
         return
@@ -633,16 +642,14 @@ resetButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", 
 # Button About
 aboutButton = Button(window, text="ABOUT", command=about)
 aboutButton.place(x=755, y=0)
-aboutButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", fg="white", activeforeground="white",
-                   font=("Courier", 10))
+aboutButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", fg="white", activeforeground="white", font=("Courier", 10))
 aboutButton.bind('<Enter>', on_enterabout)
 aboutButton.bind('<Leave>', on_leaveabout)
 
 # Button Sources
 sourceButton = Button(window, text="SOURCE", command=source)
 sourceButton.place(x=700, y=0)
-sourceButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", fg="white", activeforeground="white",
-                    font=("Courier", 10))
+sourceButton.config(bd=0, relief=FLAT, bg="#36393F", activebackground="#36393F", fg="white", activeforeground="white", font=("Courier", 10))
 sourceButton.bind('<Enter>', on_entersource)
 sourceButton.bind('<Leave>', on_leavesource)
 

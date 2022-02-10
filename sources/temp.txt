@@ -1,1 +1,0 @@
-pyinstaller sourcecode.py --onefile -n "Attraction Finder" -i "C:\Users\aaron\Downloads\AttractionFinder-main\AttractionFinder-main\assets\application\logo.ico"

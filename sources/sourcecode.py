@@ -525,8 +525,8 @@ weather = "X"
 title = Label(window, text="Attraction Finder", bg="#36393F", foreground="white")
 title.place(x=350, y=20)
 title.config(font=("Courier", 14))
-author = Label(window, text="Made By Riyon Praveen, Aaron Bijoy, & Yash Vora", bg="#36393F", foreground="white")
-author.place(x=280, y=40)
+author = Label(window, text="Riyon Praveen & Yash Vora", bg="#36393F", foreground="white")
+author.place(x=355, y=40)
 author.config(font=("Courier", 8))
 place = Label(bottom_frame, text="", bg="#18191C", foreground="white")
 place.place(relx=.5, y=10, anchor='center')
@@ -539,10 +539,10 @@ instruction = Label(bottom_frame,
 instruction.place(relx=.5, rely=.5, anchor='center')
 instruction.config(font=("Courier", 10))
 
-# FBLA Icon Image
+# AP Classroom Icon Image
 canvas = Canvas(left_frame, width=100, height=100, background='#18191C', bd=0, highlightthickness=0)
-canvas.place(x=0, y=400)
-img = PhotoImage(file="./assets/application/fbla-logo.png")
+canvas.place(x=0, y=390)
+img = PhotoImage(file="./assets/application/ap-logo.png")
 canvas.create_image(0, 0, anchor=NW, image=img)
 
 canvaspic = Canvas(window, width=500, height=275, background='#36393F', bd=0, highlightthickness=0)
@@ -645,7 +645,7 @@ dropAge.config(width=7, height=1, bd=0, relief=FLAT, activebackground="#36393F",
 # Functions for button
 def about():
     messagebox.showinfo("Information",
-                        "     2022 FBLA State Qualifier Attraction Finder\nCreated By Riyon Praveen, Aaron Bijoy, & Yash Vora\n\nAny Questions or Bugs? Contact us now!\nemail: riyonpraveen23@gmail.com\nphone: 813-438-9484")
+                        "            2022 Attraction Finder\nCreated By Riyon Praveen & Yash Vora\n\nAny Questions or Bugs? Contact us now!\nemail: riyonpraveen23@gmail.com\nphone: 813-438-9484")
 
 
 def source():

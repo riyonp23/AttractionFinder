@@ -96,19 +96,19 @@ def search():
                     instruction.config(
                         text="The Riverwalk is an connecting all of the exciting attractions\nand\nneighborhoods that make up the incredible downtown",
                         font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img2)
+                    canvaspic.create_image(250, 137, image=img0)
                 elif location == "State":
                     place.config(text="ICON Park")
                     place.bind("<Button-1>", lambda e: callback("https://iconparkorlando.com/"))
                     instruction.config(text="An Entertainment Complex Featuring Fun And Games For The Whole Family",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img3)
+                    canvaspic.create_image(250, 137, image=img1)
                 elif location == "Nation":
                     place.config(text="San Diego Zoo")
                     place.bind("<Button-1>", lambda e: callback("https://sandiegozoowildlifealliance.org/"))
                     instruction.config(text="A Zoo Housing Over 12,000 Animals Of More Than 650 Species",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img4)
+                    canvaspic.create_image(250, 137, image=img2)
             elif money == "$60-$100":
                 pass
                 if location == "Regional":
@@ -116,19 +116,19 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://buschgardens.com/"))
                     instruction.config(text="Experience Animals and Thrill Rides At The Same Time",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img5)
+                    canvaspic.create_image(250, 137, image=img3)
                 elif location == "State":
                     place.config(text="Sea World")
                     place.bind("<Button-1>", lambda e: callback("https://seaworld.com/orlando/"))
                     instruction.config(text="Experience Aquatic Animals and Thrill Rides At The Same Time",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img6)
+                    canvaspic.create_image(250, 137, image=img4)
                 elif location == "Nation":
                     place.config(text="Monuments by Moonlight")
                     place.bind("<Button-1>", lambda e: callback(
                         "https://www.trolleytours.com/washington-dc/monuments-by-moonlight-tickets"))
                     instruction.config(text="A Monuments Tour Around Washington DC", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img7)
+                    canvaspic.create_image(250, 137, image=img5)
             elif money == "$100+":
                 pass
                 if location == "Regional":
@@ -137,18 +137,18 @@ def search():
                     instruction.config(
                         text="Rated One Of The Best Aquariums In The US\nExperience A Wide Variety Of Aquatic Animals",
                         font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img8)
+                    canvaspic.create_image(250, 137, image=img6)
                 elif location == "State":
                     place.config(text="Tampa Bay Grand Prix")
                     place.bind("<Button-1>", lambda e: callback("https://tampabaygp.com/"))
                     instruction.config(text="Indoor Go-Karting Providing Safe And Fun Races", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img9)
+                    canvaspic.create_image(250, 137, image=img7)
                 elif location == "Nation":
                     place.config(text="National Museum of the US Air Force")
                     place.bind("<Button-1>", lambda e: callback("https://www.nationalmuseum.af.mil/"))
                     instruction.config(text="Includes More Than 360 Different Aircraft And Missiles On Display",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img10)
+                    canvaspic.create_image(250, 137, image=img8)
         elif age == "18-50":
             pass
             if money == "$20-$50":
@@ -158,39 +158,39 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://clubprana.com/"))
                     instruction.config(text="A Splashy, Multilevel Venue With Different Vibes And Music",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img14)
+                    canvaspic.create_image(250, 137, image=img9)
                 elif location == "State":
                     place.config(text="King's Island")
                     place.bind("<Button-1>", lambda e: callback("https://www.visitkingsisland.com/"))
                     instruction.config(text="From The Big Thrills Of Orion And Diamondback To Family Rides",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img41)
+                    canvaspic.create_image(250, 137, image=img10)
                 elif location == "Nation":
                     place.config(text="Six Flags Magic Mountain")
                     place.bind("<Button-1>", lambda e: callback("https://www.sixflags.com/magicmountain"))
                     instruction.config(text="From Massive Monster Coasters To Family Fun Attractions",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img42)
+                    canvaspic.create_image(250, 137, image=img11)
             elif money == "$60-$100":
                 pass
                 if location == "Regional":
                     place.config(text="Tiki Docks River Bar & Grill")
                     place.bind("<Button-1>", lambda e: callback("https://tikidocks.com/"))
                     instruction.config(text="Amazing Food With A Great View Of The Docks", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img43)
+                    canvaspic.create_image(250, 137, image=img12)
                 elif location == "State":
                     place.config(text="Wall Street Plaza")
                     place.bind("<Button-1>", lambda e: callback("https://www.wallstplaza.net/"))
                     instruction.config(text="Complex Of 8 Diverse Bars\n&\nLively Block Parties Every Weekend",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img15)
+                    canvaspic.create_image(250, 137, image=img13)
                 elif location == "Nation":
                     place.config(text="Hershey Park")
                     place.bind("<Button-1>", lambda e: callback("https://www.hersheypark.com/"))
                     instruction.config(
                         text="Thrilling Rides & Chocolate Adventure To Premier Dining And Spa Treatments",
                         font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img44)
+                    canvaspic.create_image(250, 137, image=img14)
             elif money == "$100+":
                 pass
                 if location == "Regional":
@@ -198,18 +198,18 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://www.yelp.com/biz/rox-rooftop-bar-tampa"))
                     instruction.config(text="Tampa's Tallest Rooftop Bar Offers Smoked Cocktails And Unreal Views",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img45)
+                    canvaspic.create_image(250, 137, image=img15)
                 elif location == "State":
                     place.config(text="Disney Park")
                     place.bind("<Button-1>", lambda e: callback("https://disneyparks.disney.go.com/"))
                     instruction.config(text="World's Most Magical Place", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img46)
+                    canvaspic.create_image(250, 137, image=img16)
                 elif location == "Nation":
                     place.config(text="Ripley's Aquarium of the Smokies")
                     place.bind("<Button-1>", lambda e: callback("https://www.ripleyaquariums.com/gatlinburg/"))
                     instruction.config(text="Sprawling Aquarium Showcasing Sharks, Penguins & A Glass-Bottom Boat Ride",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img19)
+                    canvaspic.create_image(250, 137, image=img17)
         elif age == "50+":
             pass
             if money == "$20-$50":
@@ -218,18 +218,18 @@ def search():
                     place.config(text="Daytona Beach")
                     place.bind("<Button-1>", lambda e: callback("https://www.daytonabeach.com/"))
                     instruction.config(text="A Beach Where You Are Able To Drive On", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img20)
+                    canvaspic.create_image(250, 137, image=img18)
                 elif location == "State":
                     place.config(text="Jingle Jam")
                     place.bind("<Button-1>", lambda e: callback("https://www.jinglejam.co.uk/"))
                     instruction.config(text="World's Biggest Charity Gaming Event", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img47)
+                    canvaspic.create_image(250, 137, image=img19)
                 elif location == "Nation":
                     place.config(text="Bush Gardens WilliamsBurg")
                     place.bind("<Button-1>", lambda e: callback("https://buschgardens.com/"))
                     instruction.config(text="Experience Animals and Thrill Rides At The Same Time",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img21)
+                    canvaspic.create_image(250, 137, image=img20)
             elif money == "$60-$100":
                 pass
                 if location == "Regional":
@@ -237,18 +237,18 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://visitclearwaterflorida.com/"))
                     instruction.config(text="A Beach With Some Of The Most Beautiful Waters You Will See",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img22)
+                    canvaspic.create_image(250, 137, image=img21)
                 elif location == "State":
                     place.config(text="Destin City")
                     place.bind("<Button-1>", lambda e: callback("https://www.cityofdestin.com/"))
                     instruction.config(text="A City That Consists Of Many Gulf Courses", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img23)
+                    canvaspic.create_image(250, 137, image=img22)
                 elif location == "Nation":
                     place.config(text="Knott's Berry Farm")
                     place.bind("<Button-1>", lambda e: callback("https://www.knotts.com/"))
                     instruction.config(text="An 57-Acre Theme Park That Has 4 Million Visitors Per Year",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img24)
+                    canvaspic.create_image(250, 137, image=img23)
             elif money == "$100+":
                 pass
                 if location == "Regional":
@@ -256,7 +256,7 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://disneycruise.disney.go.com/"))
                     instruction.config(text="Onboard Is Equivalent To An Entirely Different Fairytale",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img48)
+                    canvaspic.create_image(250, 137, image=img24)
                 elif location == "State":
                     place.config(text="Delray Beach")
                     place.bind("<Button-1>", lambda e: callback("https://www.delraybeachfl.gov/"))
@@ -278,35 +278,35 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://zootampa.org/"))
                     instruction.config(text="A Fun And Interactive Zoo For All Ages At A Low Cost",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img49)
+                    canvaspic.create_image(250, 137, image=img27)
                 elif location == "State":
                     place.config(text="Everglades")
                     place.bind("<Button-1>", lambda e: callback("https://www.nps.gov/ever/index.htm"))
                     instruction.config(text="A Tour Of The Incredible Variety Of Wildlife In Florida",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img50)
+                    canvaspic.create_image(250, 137, image=img28)
                 elif location == "Nation":
                     place.config(text="Georgia Aquarium")
                     place.bind("<Button-1>", lambda e: callback("https://www.georgiaaquarium.org/"))
                     instruction.config(text="A View Of The Oceans Incredible Wildlife", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img51)
+                    canvaspic.create_image(250, 137, image=img29)
             elif money == "$60-$100":
                 pass
                 if location == "Regional":
                     place.config(text="Top Golf")
                     place.bind("<Button-1>", lambda e: callback("https://topgolf.com/us/tampa/"))
                     instruction.config(text="A Fun Golfing And Dining Experience All In One", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img52)
+                    canvaspic.create_image(250, 137, image=img30)
                 elif location == "State":
                     place.config(text="Fort Myers")
                     place.bind("<Button-1>", lambda e: callback("https://cityftmyers.com/"))
                     instruction.config(text="A Clean And Peaceful Beach With An Exquisite View", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img53)
+                    canvaspic.create_image(250, 137, image=img31)
                 elif location == "Nation":
                     place.config(text="Coca Cola Factory")
                     place.bind("<Button-1>", lambda e: callback("https://www.worldofcoca-cola.com/"))
                     instruction.config(text="A Tour Of The History Of Coca Cola", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img54)
+                    canvaspic.create_image(250, 137, image=img32)
             elif money == "$100+":
                 pass
                 if location == "Regional":
@@ -314,18 +314,18 @@ def search():
                     place.bind("<Button-1>", lambda e: callback(
                         "https://adventureisland.com/?gclid=CjwKCAiAo4OQBhBBEiwA5KWu_58TZQGnJi3IDnbvqg2OceZzxMYirsdqbQ3134HOGw5vC-nljgUIyxoC5WsQAvD_BwE&gclsrc=aw.ds"))
                     instruction.config(text="A Park Filled With Water Rides For All Ages", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img55)
+                    canvaspic.create_image(250, 137, image=img33)
                 elif location == "State":
                     place.config(text="Magic Kingdom")
                     place.bind("<Button-1>", lambda e: callback("https://disneyparks.disney.go.com/"))
                     instruction.config(text="World's Most Magical Place", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img46)
+                    canvaspic.create_image(250, 137, image=img16)
                 elif location == "Nation":
                     place.config(text="Smokey Mountain National Park")
                     place.bind("<Button-1>", lambda e: callback("https://www.nps.gov/grsm/index.htm"))
                     instruction.config(text="A National Park Like None Other With Amazing Hikes And Breathtaking Views",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img56)
+                    canvaspic.create_image(250, 137, image=img34)
         elif age == "18-50":
             pass
             if money == "$20-$50":
@@ -336,17 +336,17 @@ def search():
                     instruction.config(
                         text="Rated One Of The Best Aquariums In The US\nExperience A Wide Variety Of Aquatic Animals",
                         font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img8)
+                    canvaspic.create_image(250, 137, image=img6)
                 elif location == "State":
                     place.config(text="Kennedy Space Center")
                     place.bind("<Button-1>", lambda e: callback("https://www.kennedyspacecenter.com/"))
                     instruction.config(text="Features Exhibits And Displays SpaceCrafts", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img34)
+                    canvaspic.create_image(250, 137, image=img35)
                 elif location == "Nation":
                     place.config(text="Yellow Stone National Park")
                     place.bind("<Button-1>", lambda e: callback("https://www.nps.gov/yell/index.htm"))
                     instruction.config(text="A Recreation Area Atop A Volcanic Hot Spot", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img35)
+                    canvaspic.create_image(250, 137, image=img36)
             elif money == "$60-$100":
                 pass
                 if location == "Regional":
@@ -354,18 +354,18 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://buschgardens.com/"))
                     instruction.config(text="Experience Animals and Thrill Rides At The Same Time",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img21)
+                    canvaspic.create_image(250, 137, image=img20)
                 elif location == "State":
                     place.config(text="Universal Studio")
                     place.bind("<Button-1>", lambda e: callback("https://www.universalorlando.com/web/en/us"))
                     instruction.config(text="A Theme Park For Movies, Televisions, And Other Entertainment Industries",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img36)
+                    canvaspic.create_image(250, 137, image=img37)
                 elif location == "Nation":
                     place.config(text="Mount Rushmore")
                     place.bind("<Button-1>", lambda e: callback("https://www.nps.gov/moru/index.htm"))
                     instruction.config(text="A Mountain Engraved With US Presidents", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img37)
+                    canvaspic.create_image(250, 137, image=img38)
             elif money == "$100+":
                 pass
                 if location == "Regional":
@@ -373,19 +373,19 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://orbitalpaintball.com/"))
                     instruction.config(text="An Area Where You Can Battle Each Other With Paintball",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img38)
+                    canvaspic.create_image(250, 137, image=img39)
                 elif location == "State":
                     place.config(text="St.Augustine")
                     place.bind("<Button-1>", lambda e: callback("https://www.citystaug.com/"))
                     instruction.config(text="An Amazing Historic City With A Major Background", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img66)
+                    canvaspic.create_image(250, 137, image=img40)
                 elif location == "Nation":
                     place.config(text="Las Vegas Strip")
                     place.bind("<Button-1>", lambda e: callback("https://www.visitlasvegas.com/"))
                     instruction.config(
                         text="Lined Up With Upscale casino Hotels, the neon-soaked Strip is quintessential",
                         font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img40)
+                    canvaspic.create_image(250, 137, image=img41)
         elif age == "50+":
             pass
             if money == "$20-$50":
@@ -395,37 +395,37 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://tampamuseum.org/"))
                     instruction.config(text="A Collection Of Old And New Art Work With Breathtaking Architecture",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img57)
+                    canvaspic.create_image(250, 137, image=img42)
                 elif location == "State":
                     place.config(text="Orlando Science Center")
                     place.bind("<Button-1>", lambda e: callback("https://www.osc.org/"))
                     instruction.config(text="A Massive Museum That Allows People To Explore Science",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img58)
+                    canvaspic.create_image(250, 137, image=img43)
                 elif location == "Nation":
                     place.config(text="Grand Canyon")
                     place.bind("<Button-1>", lambda e: callback("https://www.nps.gov/grca/index.htm"))
                     instruction.config(text="A National Park With Breathtaking Views And Hiking Trails",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img59)
+                    canvaspic.create_image(250, 137, image=img44)
             elif money == "$60-$100":
                 pass
                 if location == "Regional":
                     place.config(text="Tampa Bay History Center")
                     place.bind("<Button-1>", lambda e: callback("https://tampabayhistorycenter.org/"))
                     instruction.config(text="A Museum Of The History Of Tampa", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img60)
+                    canvaspic.create_image(250, 137, image=img45)
                 elif location == "State":
                     place.config(text="Phillip and Patricia Frost Museum")
                     place.bind("<Button-1>", lambda e: callback("https://www.frostscience.org/"))
                     instruction.config(text="A Museum Full Of Ways To Explore Thrilling Science", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img61)
+                    canvaspic.create_image(250, 137, image=img46)
                 elif location == "Nation":
                     place.config(text="Mall Of America")
                     place.bind("<Button-1>", lambda e: callback("https://www.mallofamerica.com/"))
                     instruction.config(text="A Mall With Many Shops And Activities To Keep You Busy All Day",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img62)
+                    canvaspic.create_image(250, 137, image=img47)
             elif money == "$100+":
                 pass
                 if location == "Regional":
@@ -433,7 +433,7 @@ def search():
                     place.bind("<Button-1>", lambda e: callback("https://www.strazcenter.org/"))
                     instruction.config(text="A Center To Watch Amazing Performing Arts And Talent",
                                        font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img63)
+                    canvaspic.create_image(250, 137, image=img48)
                 elif location == "State":
                     place.config(text="Gaylord Resort")
                     place.bind("<Button-1>", lambda e: callback(
@@ -441,67 +441,81 @@ def search():
                     instruction.config(
                         text="Over 400,000 sq.ft\nWith 10-acre Paradise Springs Water Park and\nGlass Cactus Nightclub",
                         font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img17)
+                    canvaspic.create_image(250, 137, image=img49)
                 elif location == "Nation":
                     place.config(text="Library Of Congress")
                     place.bind("<Button-1>", lambda e: callback("https://www.loc.gov/"))
                     instruction.config(text="A Collection Of The Most Books In All Of America", font=("Courier", 10))
-                    canvaspic.create_image(250, 137, image=img64)
+                    canvaspic.create_image(250, 137, image=img50)
 
 
 # Attraction CANVAS
 # Stores the images used in the program
-img2 = PhotoImage(file="./assets/images/riverwalk.png")
-img3 = PhotoImage(file="./assets/images/icon.png")
-img4 = PhotoImage(file="./assets/images/diego.png")
-img5 = PhotoImage(file="./assets/images/bushgardens.png")
-img6 = PhotoImage(file="./assets/images/seaworld.png")
-img7 = PhotoImage(file="./assets/images/monuments.png")
-img8 = PhotoImage(file="./assets/images/aquarium.png")
-img9 = PhotoImage(file="./assets/images/prix.png")
-img10 = PhotoImage(file="./assets/images/museum.png")
-img14 = PhotoImage(file="./assets/images/club.png")
-img15 = PhotoImage(file="./assets/images/wallstreet.png")
-img17 = PhotoImage(file="./assets/images/gaylord.png")
-img19 = PhotoImage(file="./assets/images/ripley.png")
-img20 = PhotoImage(file="./assets/images/daytona.png")
-img21 = PhotoImage(file="./assets/images/bushgardenswilliam.png")
-img22 = PhotoImage(file="./assets/images/clearwater.png")
-img23 = PhotoImage(file="./assets/images/destin.png")
-img24 = PhotoImage(file="./assets/images/berry.png")
-img25 = PhotoImage(file="./assets/images/delray.png")
-img26 = PhotoImage(file="./assets/images/cedar.png")
-img34 = PhotoImage(file="./assets/images/space.png")
-img35 = PhotoImage(file="./assets/images/yellow.png")
-img36 = PhotoImage(file="./assets/images/universal.png")
-img37 = PhotoImage(file="./assets/images/mount.png")
-img38 = PhotoImage(file="./assets/images/paintball.png")
-img40 = PhotoImage(file="./assets/images/las.png")
-img41 = PhotoImage(file="./assets/images/kings-island.png")
-img42 = PhotoImage(file="./assets/images/flags.png")  
-img43 = PhotoImage(file="./assets/images/docks.png")
-img44 = PhotoImage(file="./assets/images/hershey.png")
-img45 = PhotoImage(file="./assets/images/rox.png")
-img46 = PhotoImage(file="./assets/images/disney.png")
-img47 = PhotoImage(file="./assets/images/jingle.png")
-img48 = PhotoImage(file="./assets/images/disneycruise.png")
-img49 = PhotoImage(file="./assets/images/zoo.png")
-img50 = PhotoImage(file="./assets/images/everglades.png")
-img51 = PhotoImage(file="./assets/images/georgia.png")
-img52 = PhotoImage(file="./assets/images/topgolf.png")
-img53 = PhotoImage(file="./assets/images/fortmyers.png")
-img54 = PhotoImage(file="./assets/images/coke.png")
-img55 = PhotoImage(file="./assets/images/adventure.png")
-img56 = PhotoImage(file="./assets/images/smoky.png")
-img57 = PhotoImage(file="./assets/images/art.png")
-img58 = PhotoImage(file="./assets/images/orlando.png")
-img59 = PhotoImage(file="./assets/images/canyon.png")
-img60 = PhotoImage(file="./assets/images/history.png")
-img61 = PhotoImage(file="./assets/images/frost.png")
-img62 = PhotoImage(file="./assets/images/mall.png")
-img63 = PhotoImage(file="./assets/images/straz.png")
-img64 = PhotoImage(file="./assets/images/library.png")
-img66 = PhotoImage(file="./assets/images/augustine.png")
+images = ["riverwalk.png", "icon.png", "diego.png", "bushgardens.png", "seaworld.png", "monuments.png", "aquarium.png",
+          "prix.png", "museum.png", "club.png", "kings-island.png", "flags.png", "docks.png", "wallstreet.png",
+          "hershey.png", "rox.png", "disney.png", "ripley.png", "daytona.png", "jingle.png", "bushgardenswilliam.png",
+          "clearwater.png", "destin.png", "berry.png", "disneycruise.png", "delray.png", "cedar.png", "zoo.png",
+          "everglades.png", "georgia.png", "topgolf.png", "fortmyers.png", "coke.png", "adventure.png", "smoky.png",
+          "space.png", "yellow.png", "universal.png", "mount.png", "paintball.png", "augustine.png", "las.png",
+          "art.png", "orlando.png", "canyon.png", "history.png", "frost.png", "mall.png", "straz.png", "gaylord.png",
+          "library.png"]
+
+img0 = None
+img1 = None
+img2 = None
+img3 = None
+img4 = None
+img5 = None
+img6 = None
+img7 = None
+img8 = None
+img9 = None
+img10 = None
+img11 = None
+img12 = None
+img13 = None
+img14 = None
+img15 = None
+img16 = None
+img17 = None
+img18 = None
+img19 = None
+img20 = None
+img21 = None
+img22 = None
+img23 = None
+img24 = None
+img25 = None
+img26 = None
+img27 = None
+img28 = None
+img29 = None
+img30 = None
+img31 = None
+img32 = None
+img33 = None
+img34 = None
+img35 = None
+img36 = None
+img37 = None
+img38 = None
+img39 = None
+img40 = None
+img41 = None
+img42 = None
+img43 = None
+img44 = None
+img45 = None
+img46 = None
+img47 = None
+img48 = None
+img49 = None
+img50 = None
+
+# A For loop that automatically takes all the images in the list and places them in variables to be used later
+for i in range(len(images)):
+    globals()['img%s' % i] = PhotoImage(file="./assets/images/{}".format(images[i]))
+
 
 # Setting the screen 
 window.maxsize(800, 500)

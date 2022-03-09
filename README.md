@@ -13,4 +13,4 @@ Developers: [Riyon Praveen](https://github.com/skyy-rad), [Aaron Bijoy](https://
 * **RAM:** 2 GB
 
 ## Source Code
-Coded In [Python 3.5](https://github.com/skyy-rad/AttractionFinder/blob/main/sources/sourcecode.py) (760 Lines Of Code)
+Coded In [Python 3.5](https://github.com/skyy-rad/AttractionFinder/blob/main/sources/sourcecode.py) (769 Lines Of Code)

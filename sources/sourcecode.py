@@ -1,3 +1,8 @@
+# Attraction Finder by Riyon Praveen and Yash Vora Ap Submission 
+# All credit given to Yash is labled in comments
+# AP Classroom Submission  
+
+
 # importing different library
 from tkinter import *
 from tkinter import messagebox
@@ -55,7 +60,7 @@ def callback(url):
     webbrowser.open_new_tab(url)
 
 
-# reset button function
+# Reset button function - Yash Vora
 def reset():
     global time
     global money
@@ -77,7 +82,7 @@ def reset():
     canvaspic.delete("all")
 
 
-# Function for deciding which attraction gets displayed through if - else statements
+# Function for deciding which attraction gets displayed through if - else statements - Yash Vora
 def search():
     if time == "X" or money == "X" or location == "X" or age == "X" or weather == "X":
         messagebox.showerror(title="Error", message="Please Select An Option For All The Dropdowns")
@@ -512,10 +517,14 @@ img48 = None
 img49 = None
 img50 = None
 
-# A For loop that automatically takes all the images in the list and places them in variables to be used later
-for i in range(len(images)):
-    globals()['img%s' % i] = PhotoImage(file="./assets/images/{}".format(images[i]))
+def imageCreator(list):
+    
+    # A For loop that automatically takes all the images in the list and places them in variables to be used later
+    if len(list) > 50:
+        for i in range(len(list)):
+            globals()['img%s' % i] = PhotoImage(file="./assets/images/{}".format(list[i]))
 
+imageCreator(images)
 
 # Setting the screen 
 window.maxsize(800, 500)
@@ -535,7 +544,7 @@ location = "X"
 age = "X"
 weather = "X"
 
-# Base Texts
+# Base Texts - Yash Vora
 title = Label(window, text="Attraction Finder", bg="#36393F", foreground="white")
 title.place(x=350, y=20)
 title.config(font=("Courier", 14))
@@ -553,7 +562,7 @@ instruction = Label(bottom_frame,
 instruction.place(relx=.5, rely=.5, anchor='center')
 instruction.config(font=("Courier", 10))
 
-# AP Classroom Icon Image
+# AP Classroom Icon Image - Yash Vora
 canvas = Canvas(left_frame, width=100, height=100, background='#18191C', bd=0, highlightthickness=0)
 canvas.place(x=0, y=390)
 img = PhotoImage(file="./assets/application/ap-logo.png")
@@ -656,12 +665,12 @@ dropAge.config(width=7, height=1, bd=0, relief=FLAT, activebackground="#36393F",
                anchor="w", fg="white", activeforeground="white")
 
 
-# Functions for button
+# Functions for button - Yash
 def about():
     messagebox.showinfo("Information",
                         "            2022 Attraction Finder\nCreated By Riyon Praveen & Yash Vora\n\nAny Questions or Bugs? Contact us now!\nemail: riyonpraveen23@gmail.com\nphone: 813-438-9484")
 
-
+# Function for opening source.txt - Yash
 def source():
     filepath = r'./sources/sources.txt'
     sources = messagebox.askyesno("Sources", "Open Source.txt?")

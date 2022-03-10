@@ -1,5 +1,5 @@
 # Attraction Finder by Riyon Praveen and Yash Vora Ap Submission 
-# All credit given to Yash is labled in comments
+# All credit given to Yash is labeled in comments
 # AP Classroom Submission  
 
 
@@ -517,12 +517,14 @@ img48 = None
 img49 = None
 img50 = None
 
+
 def imageCreator(list):
     
     # A For loop that automatically takes all the images in the list and places them in variables to be used later
     if len(list) > 50:
         for i in range(len(list)):
             globals()['img%s' % i] = PhotoImage(file="./assets/images/{}".format(list[i]))
+
 
 imageCreator(images)
 
@@ -671,6 +673,8 @@ def about():
                         "            2022 Attraction Finder\nCreated By Riyon Praveen & Yash Vora\n\nAny Questions or Bugs? Contact us now!\nemail: riyonpraveen23@gmail.com\nphone: 813-438-9484")
 
 # Function for opening source.txt - Yash
+
+
 def source():
     filepath = r'./sources/sources.txt'
     sources = messagebox.askyesno("Sources", "Open Source.txt?")
@@ -705,7 +709,7 @@ def texttospeech():
         mainpath = "./assets/temp/temp.txt"
         lang = 'en'
         mp3name = 'output'
-        with open(os.path.join(path, file), 'w') as fp:
+        with open(os.path.join(path, file), 'w', encoding='utf-8') as fp:
             fp.write(place.cget("text") + "," + instruction.cget("text"))
         fh = open(mainpath, "r")
         myText = fh.read().replace("\n", " ")

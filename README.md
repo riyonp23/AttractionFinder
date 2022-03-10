@@ -1,5 +1,5 @@
 # Attraction Finder
-Developers: [Riyon Praveen](https://github.com/skyy-rad), [Aaron Bijoy](https://github.com/DoubleAron5), & [Yash Vora](https://github.com/yashvora317)
+Developers: [Riyon Praveen](https://github.com/skyy-rad) & [Yash Vora](https://github.com/yashvora317)
 
 ## How It Works
 * Download as ZIP (MAKE SURE TO HAVE ASSETS FOLDER IN THE SAME FOLDER AS THE EXE)

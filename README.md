@@ -19,4 +19,4 @@ pip install playsound==1.2.2
 * **RAM:** 2 GB
 
 ## Source Code
-Coded In [Python 3.5](https://github.com/skyy-rad/AttractionFinder/blob/main/sources/sourcecode.py) (773 Lines Of Code)
+Coded In [Python 3.5](https://github.com/skyy-rad/AttractionFinder/blob/AP/main.py) (773 Lines Of Code)

@@ -1,5 +1,5 @@
 # Attraction Finder
-Developers: [Riyon Praveen](https://github.com/skyy-rad), [Aaron Bijoy](https://github.com/DoubleAron5), & [Yash Vora](https://github.com/yashvora317)
+Developers: [Riyon Praveen](https://github.com/skyy-rad)
 
 ## How It Works
 * Download as ZIP (MAKE SURE TO HAVE ASSETS FOLDER IN THE SAME FOLDER AS THE EXE)
@@ -14,3 +14,4 @@ Developers: [Riyon Praveen](https://github.com/skyy-rad), [Aaron Bijoy](https://
 
 ## Source Code
 Coded In [Python 3.5](https://github.com/skyy-rad/AttractionFinder/blob/main/sources/sourcecode.py) (745 Lines Of Code)
+
